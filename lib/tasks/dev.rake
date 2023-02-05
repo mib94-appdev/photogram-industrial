@@ -42,7 +42,7 @@ task sample_data: :environment do
   end
 
   users.each do |user|
-    rand(15).times do
+    rand(25).times do
       photo = user.own_photos.create(
         caption: Faker::Quote.jack_handey,
         image: "https://robohash.org/#{rand(9999)}"
